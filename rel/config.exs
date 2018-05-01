@@ -36,6 +36,7 @@ end
 environment :prod do
   set include_erts: true
   set include_src: false
+  set dev_mode: false
   set cookie: :"V/Xbot;W,fg/M]0@N<5&rzZ~SoNe,bIbrSh0df6}hWL!s~tvVy7dE1/f}$z@_M*m"
   set output_dir: "rel/otter"
 end
