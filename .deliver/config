@@ -1,0 +1,18 @@
+APP="otter"
+
+BUILD_HOST="167.99.67.81"
+BUILD_USER="express"
+BUILD_AT="/home/express/app_build"
+
+PRODUCTION_HOSTS="167.99.67.81" 
+PRODUCTION_USER="express" 
+DELIVER_TO="/home/express/app_release" 
+
+pre_erlang_get_and_update_deps() {
+  local _prod_secret_path="/home/express/app_config/prod.secret.exs"
+  if [ "$TARGET_MIX_ENV" = "prod" ]; then
+    __sync_remote "
+      ln -sfn '$_prod_secret_path' '$BUILD_AT/config/prod.secret.exs'
+    "
+  fi
+}
