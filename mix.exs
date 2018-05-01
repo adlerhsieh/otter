@@ -19,7 +19,7 @@ defmodule Otter.Mixfile do
   def application do
     [mod: {Otter, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :mariaex, :edeliver]]
   end
 
   # Specifies which paths to compile per environment.
