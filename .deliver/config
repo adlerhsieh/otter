@@ -1,5 +1,7 @@
 APP="otter"
-TO="master"
+FROM=master
+TO=master
+AUTO_VERSION=revision
 
 BUILD_HOST="167.99.67.81"
 BUILD_USER="express"
