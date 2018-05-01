@@ -1,4 +1,5 @@
 APP="otter"
+TO="master"
 
 BUILD_HOST="167.99.67.81"
 BUILD_USER="express"
