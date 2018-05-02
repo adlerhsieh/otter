@@ -14,7 +14,7 @@ use Mix.Config
 config :otter, Otter.Endpoint,
   http: [port: 4000],
   url: [host: "167.99.67.81", port: 80],
-  cache_static_manifest: "priv/static/manifest.json",
+  cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   code_reloader: false
 
